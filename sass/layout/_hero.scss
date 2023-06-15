@@ -1,0 +1,83 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1920px) {
+}
+
+.hero__logo {
+  color: var(--bgcolor);
+  background: linear-gradient(90deg, #515151 17.32%, #1d1d1d 72.55%);
+  border-radius: 40px;
+  width: 306px;
+  height: 75px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.21;
+
+  margin-bottom: 40px;
+}
+
+.hero__title {
+  color: var(--primary-color);
+
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.62;
+
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.21;
+  }
+}
+
+.hero__text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.45;
+  margin-bottom: 55px;
+  width: 430px;
+}
+
+.button.primary {
+  background: linear-gradient(180deg, #ed769c 0%, #bb466b 100%);
+  border-radius: 8px;
+  color: var(--bgcolor);
+  box-shadow: 0px 40px 0px rgba(171, 4, 54, 0.2);
+
+  cursor: pointer;
+  border: none;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  align-items: center;
+
+  border-radius: 8px;
+  padding: 22px 40px;
+  min-width: 340px;
+
+  transition: background-color 250ms var(--time-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-third-color);
+  }
+}
