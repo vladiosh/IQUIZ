@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -133,47 +133,94 @@
         </div>
       </section>
 
-      <section class="work">
-        <div class="container">
-          <h2 class="work__title">Чем мы занимаемся</h2>
-          <ul class="work__list list">
-            <li class="work__item">
-              <img
-                src="./images/about-img-1.jpg"
-                alt="человек набирает текст на клавиатуре"
-                width="370"
-                height="294"
-              />
-              <div class="work__box">
-                <p class="work__text">Десктопные приложения</p>
+      <!-- -------------------explanation----------- -->
+
+      <section class="explanation">
+        <div class="container explanation__container">
+          <div class="explanation__box">
+            <h2 class="explanation__title">ЩО ТАКЕ КВІЗ-ТЕСТИ</h2>
+
+            <p class="explanation__text--1">
+              Дослідження показують, що користувачі відкривають 82% квізів, які
+              трапляються їм <br />у стрічці, та активно діляться результатами
+              після проходження.
+            </p>
+            <p class="explanation__text--2">
+              Які існують основні типи та види квіз-тестів:
+            </p>
+          </div>
+
+          <ul class="explanation__list">
+            <li class="explanation__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/card-image-1-1xdesk.jpg 1x,
+                    ./images/card-image-1-2xdesk.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1920px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/card-image-1-1xmob.jpg 1x,
+                    ./images/card-image-1-2xmob.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:360px)"
+                />
+
+                <img src="./images/card-image-1-1xdesk.jpg" alt="first card" />
+              </picture>
+
+              <div class="explanation__card-box">
+                <h3 class="explanation__card-title">Розважальний</h3>
+                <p class="explanation__card-text">
+                  Це вікторина найпростішого формату. Застосовуються для
+                  залучення користувачів до проекту, збільшення охоплення та
+                  лояльності його аудиторії, підвищення впізнаваності компанії,
+                  розміщення нативної реклами
+                </p>
               </div>
             </li>
-            <li class="work__item">
-              <img
-                src="./images/about-img-2.jpg"
-                alt="человек смотрит в телефон"
-                width="370"
-                height="294"
-              />
-              <div class="work__box">
-                <p class="work__text">Мобильные приложения</p>
-              </div>
-            </li>
-            <li class="work__item">
-              <img
-                src="./images/about-img-3.jpg"
-                alt="человек смотрит картинки на планшете"
-                width="370"
-                height="294"
-              />
-              <div class="work__box">
-                <p class="work__text">Дизайнерские решения</p>
+            <li class="explanation__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/card-image-2-1xdesk.jpg 1x,
+                    ./images/card-image-2-2xdesk.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1920px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/card-image-2-1xmob.jpg 1x,
+                    ./images/card-image-2-2xmob.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:360px)"
+                />
+
+                <img src="./images/card-image-2-1xdesk.jpg" alt="first card" />
+              </picture>
+
+              <div class="explanation__card-box">
+                <h3 class="explanation__card-title">Продавець</h3>
+                <p class="explanation__card-text">
+                  Ці тести створюються посилення потреби людини у певних товарі
+                  чи послузі. Такі опитувальники припускають хороше знання
+                  пропонованого продукту та інтересів клієнтів
+                </p>
               </div>
             </li>
           </ul>
         </div>
       </section>
 
+      <!-- ------------------------------ -->
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
