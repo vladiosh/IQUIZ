@@ -20,28 +20,64 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <main>
       <!-- -----------------Hero--------------- -->
       <section class="hero">
-        <div class="container">
-          <p class="hero__logo">IQUIZ:</p>
-          <h1 class="hero__title">
-            ДОПОМАГАЄМО <br />
-            ОТРИМАТИ НОВІ <br />ЗАЯВКИ
-          </h1>
-          <p class="hero__text">
-            Почніть використовувати квізи на сайті та в соціальних мережах та
-            отримайте додатковий дохід
-          </p>
-          <button type="button" class="button primary" data-modal-open>
-            Дізнатись детальніше
-          </button>
+        <div class="container hero__container">
+          <div class="hero__box">
+            <div class="logo">
+              <div class="logo__icon-container">
+                <img
+                  class="logo__icon"
+                  src="./images/rocket 1.png"
+                  alt="rocket"
+                />
+              </div>
+              <p class="logo__text">IQUIZ:</p>
+            </div>
+
+            <h1 class="hero__title">
+              ДОПОМАГАЄМО <br />
+              ОТРИМАТИ НОВІ <br />ЗАЯВКИ
+            </h1>
+            <p class="hero__text">
+              Почніть використовувати квізи на сайті та в соціальних мережах та
+              отримайте додатковий дохід
+            </p>
+            <button type="button" class="button primary" data-modal-open>
+              Дізнатись детальніше
+            </button>
+          </div>
+
+          <span class="circle-1"></span>
+          <span class="circle-2"></span>
+          <span class="circle-3"></span>
+          <span class="circle-4"></span>
+
+          <picture class="hero__image">
+            <source
+              srcset="
+              ./images/hero-image1x desk.png 1x, ./images/hero-image2x desk.png 2x"
+              type="image/png"
+              media="(min-width:1920px)"
+            />
+
+            <source
+              srcset="./images/hero-image1x mob.png 1x, ./hero-image2x mob.png 2x"
+              type="image/png"
+              media="(min-width:360px)"
+            />
+
+            <img src="./images/hero-image1x desk.png" alt="mobile" />
+          </picture>
         </div>
       </section>
+
+      <!-- -------------------About----------- -->
 
       <section class="quality">
         <div class="container">
@@ -152,7 +188,7 @@
                 />
 
                 <img
-                  src="./images/team1-1x-mob.jpg"
+                  src="./images/hero-image1x desk.png"
                   alt="первый участник команды"
                 />
               </picture>
