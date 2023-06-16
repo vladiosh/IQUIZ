@@ -3,6 +3,7 @@
   --bgcolor: #ffffff;
   --primary-text-color: #515151;
   --btn-color: #515151;
+  --black:#000000
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
   --box-shadow--accent: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --linear-gradient: linear-gradient(90deg, #515151 17.32%, #1d1d1d 72.55%);
@@ -506,125 +507,103 @@ body {
   z-index: -1;
 }
 
-@media screen and (max-width: 1199px) {
-  .quality {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .quality {
-    padding-top: 94px;
-  }
+.about {
+  padding-top: 300px;
+  padding-bottom: 300px;
 }
 
-.quality__title {
-  color: var(--title-text-color);
-  margin: 30px 0 10px 0;
+.about__container {
+  position: relative;
 }
 
-.quality__list {
-  margin-left: auto;
-  margin-right: auto;
+.about__box {
+  position: relative;
+  width: 541px;
+  height: 448px;
+  left: 416px;
 }
-@media screen and (min-width: 768px) {
-  .quality__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .quality__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-.quality__list .quality__name {
-  text-align: center;
-  color: var(--title-text-color);
+
+.about__title {
+  font-family: "Montserrat";
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 1.22;
+  color: var(--primary-color);
+  margin-bottom: 45px;
 }
-.quality__list .quality__text {
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-@media screen and (max-width: 767px) {
-  .quality__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .quality__item {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .quality__item {
-    width: calc((100% - 120px) / 4);
-    margin: 15px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-.quality__item::before {
+.about__title::before {
   content: "";
-  display: block;
-  background-color: var(--second-color);
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
+  position: absolute;
+  width: 239px;
+  height: 0px;
+  left: 0px;
+  top: 60px;
+  border: 4px dashed #000000;
 }
-@media screen and (min-width: 768px) {
-  .quality__item::before {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .quality__item::before {
-    width: 270px;
-  }
-}
-
-.icon-antena::before {
-  background-image: url(../images/antenna-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
+.about__title::after {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 41px;
+  left: -110px;
+  top: 15px;
+  background: #ffcede;
+  border-radius: 40px;
+  z-index: -1;
 }
 
-.icon-clock::before {
-  background-image: url(../images/clock-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
+.about__text--1 {
+  width: 430px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--primary-text-color);
+  margin-bottom: 25px;
 }
 
-.icon-computer::before {
-  background-image: url(../images/diagram-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
+.about__text--2 {
+  width: 430px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
-.icon-cosmos::before {
-  background-image: url(../images/astronaut-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
+.about__subtext {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--primary-color);
+}
+
+.about__image--people {
+  position: absolute;
+  width: 630px;
+  height: 704px;
+  left: 930px;
+  top: -120px;
+}
+
+.about__image--smart {
+  position: absolute;
+  width: 588px;
+  height: 912px;
+  top: 200px;
+}
+
+.circle-5 {
+  position: absolute;
+  width: 794px;
+  height: 794px;
+  left: 1176px;
+  top: 200px;
+  background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .work {
