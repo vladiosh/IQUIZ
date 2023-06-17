@@ -1,78 +1,135 @@
 .footer {
-  padding-top: 75px;
-  padding-bottom: 540px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1920px) {
+    padding-top: 75px;
+    padding-bottom: 540px;
+  }
 }
 
 .footer__container {
   position: relative;
+  height: 630px;
+
+  @media screen and (min-width: 1920px) {
+    height: 540px;
+  }
 }
 
 .footer__title {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.22;
+  text-align: center;
 
   color: var(--primary-color);
-  text-align: center;
-  margin-bottom: 75px;
+
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 36px;
+    margin-bottom: 75px;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    width: 239px;
+    width: 182px;
     height: 0px;
-    left: 840px;
-    top: 70px;
+    left: 89px;
+    top: 45px;
 
     border: 4px dashed #000000;
+
+    @media screen and (min-width: 1920px) {
+      width: 239px;
+      height: 0px;
+      left: 840px;
+      top: 70px;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
-    width: 430px;
-    height: 41px;
-    left: 745px;
+    width: 215px;
+    height: 21px;
+    left: 72px;
     top: 15px;
 
     background: #ffcede;
     border-radius: 40px;
     z-index: -1;
+
+    @media screen and (min-width: 1920px) {
+      width: 430px;
+      height: 41px;
+      left: 745px;
+      top: 15px;
+    }
   }
 }
 
 .form__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   position: absolute;
-  width: 430px;
-  height: 96px;
-  left: 1060px;
-  top: 344px;
+  width: 320px;
+  height: 75px;
+  left: 20px;
+  top: 108px;
+
+  @media screen and (min-width: 1920px) {
+    width: 430px;
+    height: 96px;
+    left: 1060px;
+    top: 344px;
+    justify-content: start;
+  }
 }
 
 .form_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 17px;
   line-height: 1.45;
+  text-align: center;
+
+  margin-bottom: 310px;
 
   text-transform: uppercase;
 
   color: #000000;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 22px;
+    margin-bottom: 0;
+    text-align: start;
+  }
 }
 
 .subscribe__form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  margin-top: 40px;
+  @media screen and (min-width: 1920px) {
+    margin-top: 40px;
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
 }
 
 .subscribe__input {
   box-sizing: border-box;
 
-  width: 430px;
-  height: 60px;
+  width: 320px;
+  height: 50px;
 
   background: #ffffff;
   border: 1px solid #a7a7a7;
@@ -80,10 +137,19 @@
 
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.22;
   color: #a3a3a3;
-  padding: 19px 130px 19px 30px;
+  padding: 15px 120px 15px 30px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1920px) {
+    width: 430px;
+    height: 60px;
+    padding: 19px 130px 19px 30px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe-button {
@@ -98,14 +164,21 @@
 
   font-family: inherit;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
   align-items: center;
 
   border-radius: 8px;
-  padding: 20px 55px;
+  padding: 15px 95px;
   min-width: 243px;
   margin-left: 16px;
+  box-shadow: 0px 20px 8px rgba(171, 4, 54, 0.2);
+
+  @media screen and (min-width: 1920px) {
+    min-width: 290px;
+    padding: 20px 55px;
+    font-size: 20px;
+  }
 }
 
 .subscribe-button .button__text {
@@ -131,32 +204,52 @@
 
 .footer__back-image {
   position: absolute;
-  width: 996px;
-  height: 1583px;
-  left: 153px;
-  top: -92px;
+  width: 333.02px;
+  height: 529px;
+  left: 41px;
+  top: 127px;
+
+  @media screen and (min-width: 1920px) {
+    width: 996px;
+    height: 1583px;
+    left: 153px;
+    top: -92px;
+  }
 }
 
 .circle-8 {
   position: absolute;
-  width: 698px;
-  height: 693px;
-  left: 214px;
-  top: 193px;
+  width: 233px;
+  height: 232px;
+  left: 61.15px;
+  top: 222px;
 
   background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
   border-radius: 50%;
   z-index: -1;
+
+  @media screen and (min-width: 1920px) {
+    width: 698px;
+    height: 693px;
+    left: 214px;
+    top: 193px;
+  }
 }
 .circle-9 {
-  position: absolute;
-  width: 1231px;
-  height: 1221px;
-  left: 120px;
-  top: 20px;
+  @media screen and (min-width: 1920px) {
+    position: absolute;
+    width: 1231px;
+    height: 1221px;
+    left: 120px;
+    top: 20px;
 
-  background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
-  transform: rotate(-90deg);
-  border-radius: 50%;
-  z-index: -1;
+    background: linear-gradient(
+      180deg,
+      #f7f1ff 0%,
+      rgba(247, 241, 255, 0) 100%
+    );
+    transform: rotate(-90deg);
+    border-radius: 50%;
+    z-index: -1;
+  }
 }

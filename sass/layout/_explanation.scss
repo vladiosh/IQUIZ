@@ -13,12 +13,16 @@
 }
 
 .explanation__back-image {
-  position: absolute;
-  width: 506.82px;
-  height: 505.64px;
-  left: 1284px;
-  top: -50px;
-  z-index: -1;
+  display: none;
+  @media screen and (min-width: 1920px) {
+    position: absolute;
+    width: 506.82px;
+    height: 505.64px;
+    left: 1284px;
+    top: -50px;
+    z-index: -1;
+    display: block;
+  }
 }
 
 .explanation__box {
@@ -135,7 +139,7 @@
 }
 
 .explanation__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   @media screen and (min-width: 1920px) {
     margin-bottom: 0;
   }
