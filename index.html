@@ -49,7 +49,8 @@
               отримайте додатковий дохід
             </p>
             <button type="button" class="button primary" data-modal-open>
-              Дізнатись детальніше
+              <span class="button__text">Дізнатись детальніше</span>
+              <span class="button__overlay"></span>
             </button>
           </div>
 
@@ -375,171 +376,62 @@
             </li>
           </ul>
           <div class="quality__button-box">
-            <button type="button" class="button primary" data-modal-open>
-              Дізнатись детальніше
+            <button type="button" class="button primary">
+              <span class="button__text">Дізнатись детальніше</span>
+              <span class="button__overlay"></span>
             </button>
           </div>
           <span class="circle-6"></span>
           <span class="circle-7"></span>
         </div>
       </section>
-
-      <!-- -------------------------------->
-
-      <section class="clients">
-        <div class="container">
-          <h2 class="clients__title">Постоянные клиенты</h2>
-          <ul class="clients__list list">
-            <li class="clients__item">
-              <a href="" class="clients__link">
-                <svg class="clients__icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-clients-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__link">
-                <svg class="clients__icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-clients-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__link">
-                <svg class="clients__icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-clients-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__link">
-                <svg class="clients__icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-clients-4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__link">
-                <svg class="clients__icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-clients-5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="" class="clients__link">
-                <svg class="clients__icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-clients-6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
     </main>
 
+    <!-- --------------footer------------------>
+
     <footer class="footer">
-      <div class="foot-container container">
-        <div class="foot-container__tablet">
-          <div class="logo-contacts">
-            <a href="" class="logo logo--inverce link"
-              ><span class="logo__text">Web</span>Studio</a
-            >
-            <address>
-              <ul class="contacts--indents list">
-                <li class="contacts__item">
-                  <a
-                    href="https://goo.gl/maps/9ainfBd7aXNSyrFP6"
-                    class="adress__link link"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li class="contacts__item">
-                  <a href="mailto:info@example.com" class="contacts__link link"
-                    >info@example.com</a
-                  >
-                </li>
-                <li class="contacts__item">
-                  <a href="tel:+380991111111" class="contacts__link link"
-                    >+38 099 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="join">
-            <p class="join__title">присоединяйтесь</p>
-            <ul class="social social--footer list">
-              <li class="social__item social__item--inverce">
-                <a href="" class="social__link social__link--web"
-                  ><svg
-                    class="social__icon social__icon--fill"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--inverce">
-                <a href="" class="social__link social__link--web"
-                  ><svg
-                    class="social__icon social__icon--fill"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--inverce">
-                <a href="" class="social__link social__link--web"
-                  ><svg
-                    class="social__icon social__icon--fill"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--inverce">
-                <a href="" class="social__link social__link--web"
-                  ><svg
-                    class="social__icon social__icon--fill"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="container footer__container">
+        <picture class="footer__back-image">
+          <source
+            srcset="
+              ./images/footer-image1xdesk.png 1x,
+              ./images/footer-image2x esk.png 2x
+            "
+            type="image/png"
+            media="(min-width:1920px)"
+          />
+
+          <img src="./images/footer-image1xdesk.png" alt="smart" />
+        </picture>
+        <div class="footer__box">
+          <h2 class="footer__title">ЗВ'ЯЖІТЬСЯ З НАМИ</h2>
         </div>
-        <div class="subscribe">
-          <p class="subscribe__text">Подпишитесь на рассылку</p>
+        <div class="form__box">
+          <p class="form_text">
+            Залишіть свій номер телефону і ми обов'язково вам передзвонимо!
+          </p>
           <form name="subscribe-form" class="subscribe__form">
-            <label for="mail" class="subscribe__label"></label>
+            <label for="tel" class="subscribe__label"></label>
             <input
               class="subscribe__input"
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder="E-mail"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Номер телефону"
             />
             <button type="submit" class="subscribe-button">
-              Подписаться
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
+              <span class="button__text">Відправити</span>
+              <span class="button__overlay"></span>
             </button>
           </form>
         </div>
+        <span class="circle-8"></span>
+        <span class="circle-9"></span>
       </div>
     </footer>
+
+    <!-- --------------modal------------------>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
