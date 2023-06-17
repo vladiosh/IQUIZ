@@ -727,13 +727,21 @@ img {
 
 .circle-5 {
   position: absolute;
-  width: 794px;
-  height: 794px;
-  left: 1176px;
-  top: 200px;
+  width: 409px;
+  height: 409px;
+  left: -146px;
+  top: -35px;
   background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
   border-radius: 50%;
-  z-index: -1;
+  z-index: -2;
+}
+@media screen and (min-width: 1920px) {
+  .circle-5 {
+    width: 794px;
+    height: 794px;
+    left: 1176px;
+    top: 200px;
+  }
 }
 
 .explanation {
