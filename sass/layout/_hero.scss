@@ -1,24 +1,29 @@
 .hero {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 25px;
+  padding-bottom: 95px;
+
+  @media screen and (min-width: 1920px) {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
 }
 
 .hero__container {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1920px) {
-}
-
 .hero__box {
   position: relative;
-  margin: 0;
-  width: 464px;
-  height: 601px;
-  left: 416px;
+  width: 317px;
+  height: 191px;
+  left: 17px;
+  top: 25px;
+  @media screen and (min-width: 1920px) {
+    margin: 0;
+    width: 464px;
+    height: 610px;
+    left: 416px;
+  }
 }
 
 .logo {
@@ -27,12 +32,29 @@
   align-items: center;
   background: var(--linear-gradient);
   border-radius: 40px;
-  width: 306px;
-  height: 75px;
-  margin: 0px 0px 40px 0px;
+
+  margin: 0px 0px 25px 0px;
 
   animation-name: bounce-1;
   animation-timing-function: linear;
+
+  width: 125px;
+  height: 30px;
+  @media screen and (min-width: 1920px) {
+    width: 306px;
+    height: 75px;
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.logo__icon {
+  width: 40px;
+  height: 50px;
+
+  @media screen and (min-width: 1920px) {
+    width: 100px;
+    height: 125px;
+  }
 }
 
 .logo__icon-container {
@@ -55,8 +77,11 @@
 
   font-family: "Montserrat";
   font-weight: 800;
-  font-size: 46px;
+  font-size: 16px;
   line-height: 1.21;
+  @media screen and (min-width: 1920px) {
+    font-size: 46px;
+  }
 }
 
 .hero__title {
@@ -64,26 +89,33 @@
 
   font-family: "Montserrat";
   font-weight: 800;
-  font-size: 46px;
+  font-size: 20px;
   line-height: 1.62;
   position: relative;
-  margin-bottom: 30px;
-}
+  margin-bottom: 10px;
+  width: 250px;
 
-@media screen and (min-width: 1200px) {
-  .hero__title {
-    font-size: 44px;
-    line-height: 1.21;
+  @media screen and (min-width: 1920px) {
+    font-size: 46px;
+    margin-bottom: 30px;
+    width: 450px;
   }
 }
 
 .hero__text {
   font-family: "Montserrat";
   font-weight: 500;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 1.45;
-  margin-bottom: 55px;
-  width: 430px;
+  margin-bottom: 275px;
+  width: 286px;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 22px;
+    margin-bottom: 55px;
+    width: 430px;
+    margin-bottom: 55px;
+  }
 }
 
 .button.primary {
@@ -95,14 +127,22 @@
   border: none;
   font-family: inherit;
   font-weight: 700;
-  font-size: 20px;
+
+  font-size: 16px;
   line-height: 1.2;
   align-items: center;
   box-shadow: 0px 40px 8px rgba(171, 4, 54, 0.2);
 
-  padding: 22px 40px;
-  min-width: 340px;
+  padding: 15px 45px;
+  min-width: 290px;
+
   background-image: linear-gradient(180deg, #ed769c 0%, #bb466b 100%);
+
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+    min-width: 340px;
+    padding: 22px 40px;
+  }
 }
 
 .button.primary .button__text {
@@ -126,99 +166,105 @@
   opacity: 1;
 }
 
-// .button.primary {
-//   position: relative;
-
-//   background-image: linear-gradient(180deg, #ed769c 0%, #bb466b 100%);
-//   border-radius: 8px;
-//   color: var(--bgcolor);
-
-//   cursor: pointer;
-//   border: none;
-
-//   font-family: inherit;
-//   font-weight: 700;
-//   font-size: 20px;
-//   line-height: 1.2;
-//   align-items: center;
-
-//   border-radius: 8px;
-//   padding: 22px 40px;
-//   min-width: 340px;
-
-//   transition: background-image 3s ease-in-out;
-
-//   &:hover,
-//   &:focus {
-//     background-image: var(--linear-gradient);
-//   }
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     width: 340px;
-//     height: 85px;
-//     left: 0px;
-//     top: 22px;
-
-//     background: rgba(171, 4, 54, 0.2);
-//     filter: blur(20px);
-//     border-radius: 4px;
-//   }
-// }
-
 .hero__image {
   position: absolute;
-  width: 1248.73px;
-  height: 951px;
-  left: 769.55px;
-  top: -130px;
+  width: 286px;
+  height: 314px;
+  left: 45.91px;
+  top: 241px;
+
+  z-index: -1;
+
+  @media screen and (min-width: 1920px) {
+    width: 1248.73px;
+    height: 951px;
+    left: 769.55px;
+    top: -130px;
+    z-index: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .circle-1 {
   position: absolute;
-  width: 1538px;
-  height: 1538px;
-  left: 922px;
-  top: -335px;
+  width: 389px;
+  height: 389px;
+  left: -15px;
+  top: 277px;
 
   background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
-
   border-radius: 50%;
+  z-index: -1;
+  @media screen and (min-width: 1920px) {
+    position: absolute;
+    width: 1538px;
+    height: 1538px;
+    left: 922px;
+    top: -335px;
+
+    background: linear-gradient(
+      180deg,
+      #f7f1ff 0%,
+      rgba(247, 241, 255, 0) 100%
+    );
+  }
 }
 
 .circle-2 {
-  position: absolute;
-  width: 494px;
-  height: 494px;
-  left: -181px;
-  top: -200px;
+  @media screen and (min-width: 1920px) {
+    position: absolute;
+    width: 494px;
+    height: 494px;
+    left: -181px;
+    top: -200px;
 
-  background: linear-gradient(180deg, #faf5ff 0%, rgba(250, 245, 255, 0) 100%);
-  border-radius: 50%;
-  z-index: -1;
+    background: linear-gradient(
+      180deg,
+      #faf5ff 0%,
+      rgba(250, 245, 255, 0) 100%
+    );
+    border-radius: 50%;
+    z-index: -1;
+  }
 }
 
 .circle-3 {
-  position: absolute;
-  width: 131px;
-  height: 131px;
-  left: 182px;
-  top: 670px;
+  @media screen and (min-width: 1920px) {
+    position: absolute;
+    width: 131px;
+    height: 131px;
+    left: 182px;
+    top: 670px;
 
-  background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
-  border-radius: 50%;
-  z-index: -1;
+    background: linear-gradient(
+      180deg,
+      #f7f1ff 0%,
+      rgba(247, 241, 255, 0) 100%
+    );
+    border-radius: 50%;
+    z-index: -1;
+  }
 }
 
 .circle-4 {
-  position: absolute;
-  width: 325px;
-  height: 325px;
-  left: -118px;
-  top: 840px;
+  @media screen and (min-width: 1920px) {
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    left: -118px;
+    top: 840px;
 
-  background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
-  border-radius: 50%;
-  z-index: -1;
+    background: linear-gradient(
+      180deg,
+      #f7f1ff 0%,
+      rgba(247, 241, 255, 0) 100%
+    );
+    border-radius: 50%;
+    z-index: -1;
+  }
 }
