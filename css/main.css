@@ -728,6 +728,141 @@ body {
   color: var(--primary-text-color);
 }
 
+.quality {
+  padding-top: 75px;
+  padding-bottom: 152px;
+}
+
+.quality__container {
+  position: relative;
+}
+
+.quality__box {
+  text-align: center;
+}
+
+.quality__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  color: var(--primary-color);
+  margin-bottom: 60px;
+}
+.quality__title::before {
+  content: "";
+  position: absolute;
+  width: 239px;
+  height: 0px;
+  left: 840px;
+  top: 70px;
+  border: 4px dashed #000000;
+}
+.quality__title::after {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 41px;
+  left: 745px;
+  top: 15px;
+  background: #ffcede;
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.quality__text--1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--primary-text-color);
+  margin-bottom: 25px;
+}
+
+.quality__text--2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--primary-text-color);
+}
+
+.quality__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 115px;
+}
+
+.quality__item {
+  padding: 45px 20px;
+  border: 1px solid #dfdfdf;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.quality__icon {
+  margin: 0;
+  margin: auto;
+}
+
+.quality__item-name {
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: #282828;
+  width: 300px;
+  margin-top: 45px;
+}
+.quality__item-name::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 0px;
+  left: 50px;
+  top: 55px;
+  border: 4px dashed #ed769c;
+}
+
+.quality__button-box {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.quality__back-image {
+  position: absolute;
+  width: 720.47px;
+  height: 600.17px;
+  left: 1376.1px;
+  top: 0px;
+}
+
+.circle-6 {
+  position: absolute;
+  width: 741px;
+  height: 741px;
+  left: 1400px;
+  top: 178px;
+  background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-7 {
+  position: absolute;
+  width: 500px;
+  height: 496px;
+  left: -215px;
+  top: 600px;
+  background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
