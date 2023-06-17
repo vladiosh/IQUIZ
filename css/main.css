@@ -321,15 +321,12 @@ body {
 .hero__box {
   position: relative;
   width: 317px;
-  height: 191px;
   left: 17px;
-  top: 25px;
 }
 @media screen and (min-width: 1920px) {
   .hero__box {
     margin: 0;
     width: 464px;
-    height: 610px;
     left: 416px;
   }
 }
@@ -479,7 +476,7 @@ body {
   width: 286px;
   height: 314px;
   left: 45.91px;
-  top: 241px;
+  top: 300px;
   z-index: -1;
 }
 @media screen and (min-width: 1920px) {
@@ -559,8 +556,14 @@ img {
 }
 
 .about {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1920px) {
+  .about {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
 }
 
 .about__container {
@@ -569,15 +572,22 @@ img {
 
 .about__box {
   position: relative;
-  width: 541px;
-  height: 448px;
-  left: 416px;
+  width: 171px;
+  height: 24px;
+  left: 20px;
+}
+@media screen and (min-width: 1920px) {
+  .about__box {
+    width: 541px;
+    height: 448px;
+    left: 416px;
+  }
 }
 
 .about__title {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.22;
   color: var(--primary-color);
   margin-bottom: 45px;
@@ -601,6 +611,11 @@ img {
   background: #ffcede;
   border-radius: 40px;
   z-index: -1;
+}
+@media screen and (min-width: 1920px) {
+  .about__title {
+    font-size: 36px;
+  }
 }
 
 .about__text--1 {

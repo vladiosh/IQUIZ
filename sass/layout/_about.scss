@@ -1,6 +1,10 @@
 .about {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 1920px) {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
 }
 .about__container {
   position: relative;
@@ -8,16 +12,23 @@
 
 .about__box {
   position: relative;
-  width: 541px;
-  height: 448px;
-  left: 416px;
+  width: 171px;
+  height: 24px;
+  left: 20px;
+
+  @media screen and (min-width: 1920px) {
+    width: 541px;
+    height: 448px;
+    left: 416px;
+  }
 }
 
 .about__title {
   font-family: "Montserrat";
 
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
+
   line-height: 1.22;
 
   color: var(--primary-color);
@@ -46,6 +57,10 @@
     background: #ffcede;
     border-radius: 40px;
     z-index: -1;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 36px;
   }
 }
 

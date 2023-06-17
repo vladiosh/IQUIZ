@@ -15,13 +15,12 @@
 .hero__box {
   position: relative;
   width: 317px;
-  height: 191px;
   left: 17px;
-  top: 25px;
+
   @media screen and (min-width: 1920px) {
     margin: 0;
     width: 464px;
-    height: 610px;
+
     left: 416px;
   }
 }
@@ -171,7 +170,7 @@
   width: 286px;
   height: 314px;
   left: 45.91px;
-  top: 241px;
+  top: 300px;
 
   z-index: -1;
 
