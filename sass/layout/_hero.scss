@@ -13,14 +13,10 @@
 }
 
 .hero__box {
-  position: relative;
-  width: 317px;
-  left: 17px;
-
   @media screen and (min-width: 1920px) {
+    position: relative;
     margin: 0;
     width: 464px;
-
     left: 416px;
   }
 }
@@ -115,6 +111,10 @@
     width: 430px;
     margin-bottom: 55px;
   }
+}
+
+.hero__button-box {
+  text-align: center;
 }
 
 .button.primary {
