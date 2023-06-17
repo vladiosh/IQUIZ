@@ -615,6 +615,15 @@ body {
   position: relative;
 }
 
+.explanation__back-image {
+  position: absolute;
+  width: 506.82px;
+  height: 505.64px;
+  left: 1284px;
+  top: -50px;
+  z-index: -1;
+}
+
 .explanation__box {
   text-align: center;
 }
@@ -663,6 +672,59 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
+  color: var(--primary-text-color);
+}
+
+.explanation__list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.explanation__item {
+  background: #ffffff;
+  border: 1px solid #dfdede;
+  border-radius: 20px;
+}
+
+.explanation__box--card {
+  padding: 25px;
+}
+
+.explanation__box--text {
+  margin-top: 25px;
+}
+
+.explanation__card-text {
+  width: 340px;
+}
+
+.explanation__card-title {
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+.explanation__card-title::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 0px;
+  left: 0px;
+  top: 30px;
+  border: 4px dashed #ed769c;
+}
+
+.explanation__card-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--primary-text-color);
 }
 

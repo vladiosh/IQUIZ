@@ -137,6 +137,18 @@
 
       <section class="explanation">
         <div class="container explanation__container">
+          <picture class="explanation__back-image">
+            <source
+              srcset="
+                ./images/explanation-image-1x-desk.png 1x,
+                ./images/explanation-image-2x-desk.png 2x
+              "
+              type="image/png"
+              media="(min-width:1920px)"
+            />
+
+            <img src="./images/explanation-image-1x-desk.png" alt="smart" />
+          </picture>
           <div class="explanation__box">
             <h2 class="explanation__title">ЩО ТАКЕ КВІЗ-ТЕСТИ</h2>
 
@@ -150,70 +162,147 @@
             </p>
           </div>
 
-          <ul class="explanation__list">
+          <ul class="explanation__list list">
             <li class="explanation__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/card-image-1-1xdesk.jpg 1x,
-                    ./images/card-image-1-2xdesk.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1920px)"
-                />
+              <div class="explanation__box--card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/card-image-1-1xdesk.jpg 1x,
+                      ./images/card-image-1-2xdesk.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:1920px)"
+                  />
 
-                <source
-                  srcset="
-                    ./images/card-image-1-1xmob.jpg 1x,
-                    ./images/card-image-1-2xmob.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:360px)"
-                />
+                  <source
+                    srcset="
+                      ./images/card-image-1-1xmob.jpg 1x,
+                      ./images/card-image-1-2xmob.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:360px)"
+                  />
 
-                <img src="./images/card-image-1-1xdesk.jpg" alt="first card" />
-              </picture>
+                  <img
+                    src="./images/card-image-1-1xdesk.jpg"
+                    alt="first card"
+                  />
+                </picture>
 
-              <div class="explanation__card-box">
-                <h3 class="explanation__card-title">Розважальний</h3>
-                <p class="explanation__card-text">
-                  Це вікторина найпростішого формату. Застосовуються для
-                  залучення користувачів до проекту, збільшення охоплення та
-                  лояльності його аудиторії, підвищення впізнаваності компанії,
-                  розміщення нативної реклами
-                </p>
+                <div class="explanation__box--text">
+                  <h3 class="explanation__card-title">Розважальний</h3>
+                  <p class="explanation__card-text">
+                    Це вікторина найпростішого формату. Застосовуються для
+                    залучення користувачів до проекту, збільшення охоплення та
+                    лояльності його аудиторії, підвищення впізнаваності
+                    компанії, розміщення нативної реклами
+                  </p>
+                </div>
               </div>
             </li>
             <li class="explanation__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/card-image-2-1xdesk.jpg 1x,
-                    ./images/card-image-2-2xdesk.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:1920px)"
-                />
+              <div class="explanation__box--card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/card-image-2-1xdesk.jpg 1x,
+                      ./images/card-image-2-2xdesk.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:1920px)"
+                  />
 
-                <source
-                  srcset="
-                    ./images/card-image-2-1xmob.jpg 1x,
-                    ./images/card-image-2-2xmob.jpg 2x
-                  "
-                  type="image/jpeg"
-                  media="(min-width:360px)"
-                />
+                  <source
+                    srcset="
+                      ./images/card-image-2-1xmob.jpg 1x,
+                      ./images/card-image-2-2xmob.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:360px)"
+                  />
 
-                <img src="./images/card-image-2-1xdesk.jpg" alt="first card" />
-              </picture>
+                  <img src="./images/card-image-2-1xdesk.jpg" alt="2card" />
+                </picture>
 
-              <div class="explanation__card-box">
-                <h3 class="explanation__card-title">Продавець</h3>
-                <p class="explanation__card-text">
-                  Ці тести створюються посилення потреби людини у певних товарі
-                  чи послузі. Такі опитувальники припускають хороше знання
-                  пропонованого продукту та інтересів клієнтів
-                </p>
+                <div class="explanation__box--text">
+                  <h3 class="explanation__card-title">Продавець</h3>
+                  <p class="explanation__card-text">
+                    Ці тести створюються посилення потреби людини у певних
+                    товарі чи послузі. Такі опитувальники припускають хороше
+                    знання пропонованого продукту та інтересів клієнтів
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="explanation__item">
+              <div class="explanation__box--card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/card-image-3-1xdesk.jpg 1x,
+                      ./images/card-image-3-2xdesk.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:1920px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/card-image-3-1xmob.jpg 1x,
+                      ./images/card-image-3-2xmob.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:360px)"
+                  />
+
+                  <img src="./images/card-image-3-1xdesk.jpg" alt="3card" />
+                </picture>
+
+                <div class="explanation__box--text">
+                  <h3 class="explanation__card-title">Залучаючий</h3>
+                  <p class="explanation__card-text">
+                    У цьому випадку продукт не пропонується прямо, такі тести
+                    швидше допомагають відвідувачеві зрозуміти, що йому
+                    хочеться. Товар або послуга згадується як би ненароком, між
+                    справою.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="explanation__item">
+              <div class="explanation__box--card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/card-image-4-1xdesk.jpg 1x,
+                      ./images/card-image-4-2xdesk.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:1920px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/card-image-4-1xmob.jpg 1x,
+                      ./images/card-image-4-2xmob.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:360px)"
+                  />
+
+                  <img src="./images/ccard-image-4-1xdesk.jpg" alt="4card" />
+                </picture>
+
+                <div class="explanation__box--text">
+                  <h3 class="explanation__card-title">Для захоплення лідів</h3>
+                  <p class="explanation__card-text">
+                    Це анкета, яка заповнюється для отримання інформації.
+                    Відмінність квізів Для захоплення лідів від інших у тому, що
+                    результат проходження тесту не видається відразу, а
+                    надсилається на email.
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
