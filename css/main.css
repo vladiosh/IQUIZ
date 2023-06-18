@@ -866,13 +866,23 @@ img {
 .about__image--smart {
   display: none;
 }
+@media screen and (min-width: 1024px) {
+  .about__image--smart {
+    position: absolute;
+    width: 230px;
+    height: 600px;
+    top: 350px;
+    left: 0;
+    display: block;
+    z-index: -1;
+  }
+}
 @media screen and (min-width: 1920px) {
   .about__image--smart {
     position: absolute;
     width: 588px;
     height: 912px;
     top: 200px;
-    display: block;
   }
 }
 
@@ -907,6 +917,12 @@ img {
   padding-top: 20px;
   padding-bottom: 130px;
 }
+@media screen and (min-width: 1024px) {
+  .explanation {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .explanation {
     padding-top: 124px;
@@ -920,6 +936,17 @@ img {
 
 .explanation__back-image {
   display: none;
+}
+@media screen and (min-width: 1024px) {
+  .explanation__back-image {
+    position: absolute;
+    width: 506.82px;
+    height: 505.64px;
+    left: 700px;
+    top: 50px;
+    z-index: -1;
+    display: block;
+  }
 }
 @media screen and (min-width: 1920px) {
   .explanation__back-image {
@@ -945,6 +972,12 @@ img {
   color: var(--primary-color);
   margin-bottom: 35px;
 }
+@media screen and (min-width: 1024px) {
+  .explanation__title {
+    font-size: 30px;
+    margin-bottom: 55px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .explanation__title {
     font-size: 36px;
@@ -959,6 +992,14 @@ img {
   left: 89px;
   top: 45px;
   border: 4px dashed #000000;
+}
+@media screen and (min-width: 1024px) {
+  .explanation__title::before {
+    width: 239px;
+    height: 0px;
+    left: 400px;
+    top: 60px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .explanation__title::before {
@@ -979,6 +1020,14 @@ img {
   border-radius: 40px;
   z-index: -1;
 }
+@media screen and (min-width: 1024px) {
+  .explanation__title::after {
+    width: 400px;
+    height: 30px;
+    left: 310px;
+    top: 15px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .explanation__title::after {
     width: 430px;
@@ -996,11 +1045,16 @@ img {
   color: var(--primary-text-color);
   margin-bottom: 15px;
 }
+@media screen and (min-width: 1024px) {
+  .explanation__text--1 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-width: 1920px) {
   .explanation__text--1 {
     font-size: 20px;
-    margin-bottom: 25px;
-    line-height: 1.4;
   }
 }
 
@@ -1012,11 +1066,16 @@ img {
   margin-bottom: 20px;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 1024px) {
+  .explanation__text--2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-width: 1920px) {
   .explanation__text--2 {
     font-size: 20px;
-    margin-bottom: 25px;
-    line-height: 1.4;
   }
 }
 
@@ -1025,11 +1084,16 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (min-width: 1024px) {
+  .explanation__list {
+    gap: 20px 70px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .explanation__list {
     gap: 20px;
-    justify-content: center;
-    margin-top: 50px;
   }
 }
 
@@ -1039,7 +1103,7 @@ img {
   border-radius: 20px;
   width: 288px;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .explanation__item {
     width: auto;
   }
@@ -1048,7 +1112,7 @@ img {
 .explanation__item:not(:last-child) {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .explanation__item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -1057,7 +1121,7 @@ img {
 .explanation__box--card {
   padding: 20px;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .explanation__box--card {
     padding: 25px;
   }
@@ -1066,7 +1130,7 @@ img {
 .explanation__box--text {
   margin-top: 25px;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .explanation__box--text {
     margin-top: 15px;
   }
@@ -1134,6 +1198,12 @@ img {
   padding-top: 16px;
   padding-bottom: 110px;
 }
+@media screen and (min-width: 1024px) {
+  .quality {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .quality {
     padding-top: 75px;
@@ -1157,6 +1227,12 @@ img {
   color: var(--primary-color);
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1024px) {
+  .quality__title {
+    font-size: 30px;
+    margin-bottom: 55px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .quality__title {
     font-size: 36px;
@@ -1171,6 +1247,14 @@ img {
   left: 89px;
   top: 65px;
   border: 4px dashed #000000;
+}
+@media screen and (min-width: 1024px) {
+  .quality__title::before {
+    width: 239px;
+    height: 0px;
+    left: 400px;
+    top: 60px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .quality__title::before {
@@ -1191,6 +1275,14 @@ img {
   border-radius: 40px;
   z-index: -1;
 }
+@media screen and (min-width: 1024px) {
+  .quality__title::after {
+    width: 400px;
+    height: 30px;
+    left: 310px;
+    top: 15px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .quality__title::after {
     width: 430px;
@@ -1209,10 +1301,16 @@ img {
   color: var(--primary-text-color);
   margin-bottom: 15px;
 }
+@media screen and (min-width: 1024px) {
+  .quality__text--1 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-width: 1920px) {
   .quality__text--1 {
     font-size: 20px;
-    margin-bottom: 25px;
   }
 }
 
@@ -1224,6 +1322,13 @@ img {
   color: var(--primary-text-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .quality__text--2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-width: 1920px) {
   .quality__text--2 {
     font-size: 20px;
@@ -1234,6 +1339,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .quality__list {
+    justify-content: center;
+    gap: 10px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .quality__list {
@@ -1258,7 +1369,7 @@ img {
 .quality__item:not(:last-child) {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .quality__item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -1298,7 +1409,7 @@ img {
 .button.primary.quality__button {
   min-width: 320px;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .button.primary.quality__button {
     min-width: 340px;
   }
@@ -1307,6 +1418,17 @@ img {
 .quality__back-image {
   display: none;
 }
+@media screen and (min-width: 1024px) {
+  .quality__back-image {
+    position: absolute;
+    width: 720.47px;
+    height: 600.17px;
+    left: 900px;
+    top: -50px;
+    display: block;
+    z-index: -1;
+  }
+}
 @media screen and (min-width: 1920px) {
   .quality__back-image {
     position: absolute;
@@ -1314,10 +1436,22 @@ img {
     height: 600.17px;
     left: 1376.1px;
     top: 0px;
-    display: block;
+    z-index: 0;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .circle-6 {
+    position: absolute;
+    width: 741px;
+    height: 741px;
+    left: 750px;
+    top: 90px;
+    background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
+    border-radius: 50%;
+    z-index: -2;
+  }
+}
 @media screen and (min-width: 1920px) {
   .circle-6 {
     position: absolute;
@@ -1325,12 +1459,21 @@ img {
     height: 741px;
     left: 1400px;
     top: 178px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .circle-7 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -215px;
+    top: 500px;
     background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
     border-radius: 50%;
     z-index: -1;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .circle-7 {
     position: absolute;
@@ -1338,9 +1481,6 @@ img {
     height: 496px;
     left: -215px;
     top: 600px;
-    background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
-    border-radius: 50%;
-    z-index: -1;
   }
 }
 

@@ -207,12 +207,20 @@ img {
 
 .about__image--smart {
   display: none;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    width: 230px;
+    height: 600px;
+    top: 350px;
+    left: 0;
+    display: block;
+    z-index: -1;
+  }
   @media screen and (min-width: 1920px) {
     position: absolute;
     width: 588px;
     height: 912px;
     top: 200px;
-    display: block;
   }
 }
 
