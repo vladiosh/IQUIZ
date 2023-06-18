@@ -916,20 +916,23 @@ img {
 .about__image--smart {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .about__image--smart {
     position: absolute;
-    width: 230px;
-    height: 600px;
+    width: 120px;
     top: 350px;
     left: 0;
     display: block;
     z-index: -1;
   }
 }
+@media screen and (min-width: 1024px) {
+  .about__image--smart {
+    width: 230px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .about__image--smart {
-    position: absolute;
     width: 588px;
     height: 912px;
     top: 200px;
@@ -1540,8 +1543,8 @@ img {
     position: absolute;
     width: 300px;
     height: 600.17px;
-    left: 700px;
-    top: 50px;
+    left: 600px;
+    top: -150px;
     display: block;
     z-index: -1;
   }
@@ -1571,10 +1574,10 @@ img {
 @media screen and (min-width: 768px) {
   .circle-6 {
     position: absolute;
-    width: 741px;
-    height: 741px;
-    left: 500px;
-    top: 120px;
+    width: 350px;
+    height: 350px;
+    left: 650px;
+    top: -100px;
     background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
     border-radius: 50%;
     z-index: -2;
@@ -1582,6 +1585,8 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .circle-6 {
+    width: 740px;
+    height: 740px;
     left: 750px;
     top: 90px;
   }
@@ -1640,6 +1645,11 @@ img {
   position: relative;
   height: 630px;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    height: 430px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .footer__container {
     height: 395px;
@@ -1680,10 +1690,16 @@ img {
   top: 45px;
   border: 4px dashed #000000;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .footer__title::before {
     width: 239px;
     height: 0px;
+    left: 265px;
+    top: 45px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__title::before {
     left: 400px;
     top: 60px;
   }
@@ -1706,6 +1722,12 @@ img {
   background: #ffcede;
   border-radius: 40px;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .footer__title::after {
+    left: 280px;
+    top: 10px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .footer__title::after {
@@ -1731,12 +1753,12 @@ img {
   position: absolute;
   top: 108px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .form__box {
     width: 430px;
     height: 96px;
     left: 450px;
-    top: 200px;
+    top: 197px;
     justify-content: start;
   }
 }
@@ -1761,6 +1783,14 @@ img {
   text-transform: uppercase;
   color: #000000;
 }
+@media screen and (min-width: 768px) {
+  .form_text {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: start;
+    width: 250px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .form_text {
     font-size: 22px;
@@ -1775,10 +1805,15 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .subscribe__form {
+    margin-top: 20px;
+    justify-content: start;
+  }
+}
 @media screen and (min-width: 1024px) {
   .subscribe__form {
     margin-top: 40px;
-    justify-content: start;
     flex-wrap: nowrap;
   }
 }
@@ -1797,6 +1832,11 @@ img {
   color: #a3a3a3;
   padding: 15px 120px 15px 30px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .subscribe__input {
@@ -1875,10 +1915,17 @@ img {
   left: 41px;
   top: 127px;
 }
+@media screen and (min-width: 768px) {
+  .footer__back-image {
+    width: 500px;
+    height: 1583px;
+    left: 0px;
+    top: 0px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .footer__back-image {
     width: 700px;
-    height: 1583px;
     left: -100px;
     top: -92px;
   }
@@ -1902,6 +1949,14 @@ img {
   border-radius: 50%;
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .circle-8 {
+    width: 300px;
+    height: 300px;
+    left: 50px;
+    top: 150px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .circle-8 {
     width: 200px;
@@ -1919,17 +1974,25 @@ img {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .circle-9 {
     position: absolute;
-    width: 1100px;
-    height: 1100px;
-    left: 450px;
-    top: 20px;
+    width: 500px;
+    height: 500px;
+    left: 500px;
+    top: 150px;
     background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
     transform: rotate(-90deg);
     border-radius: 50%;
     z-index: -1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .circle-9 {
+    width: 1100px;
+    height: 1100px;
+    left: 450px;
+    top: 20px;
   }
 }
 @media screen and (min-width: 1920px) {

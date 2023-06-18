@@ -222,17 +222,18 @@ img {
 
 .about__image--smart {
   display: none;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
-    width: 230px;
-    height: 600px;
+    width: 120px;
     top: 350px;
     left: 0;
     display: block;
     z-index: -1;
   }
+  @media screen and (min-width: 1024px) {
+    width: 230px;
+  }
   @media screen and (min-width: 1920px) {
-    position: absolute;
     width: 588px;
     height: 912px;
     top: 200px;

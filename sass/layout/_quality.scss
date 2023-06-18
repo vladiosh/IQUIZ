@@ -244,8 +244,8 @@
     position: absolute;
     width: 300px;
     height: 600.17px;
-    left: 700px;
-    top: 50px;
+    left: 600px;
+    top: -150px;
     display: block;
     z-index: -1;
   }
@@ -274,10 +274,10 @@ img {
 .circle-6 {
   @media screen and (min-width: 768px) {
     position: absolute;
-    width: 741px;
-    height: 741px;
-    left: 500px;
-    top: 120px;
+    width: 350px;
+    height: 350px;
+    left: 650px;
+    top: -100px;
 
     background: linear-gradient(
       180deg,
@@ -288,6 +288,8 @@ img {
     z-index: -2;
   }
   @media screen and (min-width: 1024px) {
+    width: 740px;
+    height: 740px;
     left: 750px;
     top: 90px;
   }
