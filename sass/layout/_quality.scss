@@ -184,6 +184,13 @@
   background: #ffffff;
   width: 250px;
 
+  transition: box-shadow 250ms var(--time-function);
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--box-shadow);
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     width: 200px;
   }
