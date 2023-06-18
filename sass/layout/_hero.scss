@@ -2,6 +2,11 @@
   padding-top: 25px;
   padding-bottom: 95px;
 
+  @media screen and (min-width: 1024px) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
   @media screen and (min-width: 1920px) {
     padding-top: 250px;
     padding-bottom: 250px;
@@ -13,6 +18,12 @@
 }
 
 .hero__box {
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    margin: 0;
+    width: 464px;
+    left: 200px;
+  }
   @media screen and (min-width: 1920px) {
     position: relative;
     margin: 0;
@@ -35,6 +46,11 @@
 
   width: 125px;
   height: 30px;
+
+  @media screen and (min-width: 1024px) {
+    width: 200px;
+    height: 45px;
+  }
   @media screen and (min-width: 1920px) {
     width: 306px;
     height: 75px;
@@ -45,6 +61,11 @@
 .logo__icon {
   width: 40px;
   height: 50px;
+
+  @media screen and (min-width: 1024px) {
+    width: 75px;
+    height: 100px;
+  }
 
   @media screen and (min-width: 1920px) {
     width: 100px;
@@ -74,6 +95,10 @@
   font-weight: 800;
   font-size: 16px;
   line-height: 1.21;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+  }
   @media screen and (min-width: 1920px) {
     font-size: 46px;
   }
@@ -90,6 +115,12 @@
   margin-bottom: 10px;
   width: 250px;
 
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+    margin-bottom: 30px;
+    width: 350px;
+  }
+
   @media screen and (min-width: 1920px) {
     font-size: 46px;
     margin-bottom: 30px;
@@ -105,6 +136,13 @@
   margin-bottom: 275px;
   width: 286px;
 
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+    margin-bottom: 55px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 1920px) {
     font-size: 22px;
     margin-bottom: 55px;
@@ -115,6 +153,9 @@
 
 .hero__button-box {
   text-align: center;
+  @media screen and (min-width: 1024px) {
+    text-align: start;
+  }
 }
 
 .button.primary {
@@ -174,6 +215,14 @@
 
   z-index: -1;
 
+  @media screen and (min-width: 1024px) {
+    width: 600px;
+    height: 951px;
+    left: 500px;
+    top: -50px;
+    z-index: 0;
+  }
+
   @media screen and (min-width: 1920px) {
     width: 1248.73px;
     height: 951px;
@@ -199,27 +248,27 @@ img {
   background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
   border-radius: 50%;
   z-index: -1;
+
+  @media screen and (min-width: 1024px) {
+    width: 700px;
+    height: 700px;
+    left: 500px;
+    top: -335px;
+  }
   @media screen and (min-width: 1920px) {
-    position: absolute;
     width: 1538px;
     height: 1538px;
     left: 922px;
     top: -335px;
-
-    background: linear-gradient(
-      180deg,
-      #f7f1ff 0%,
-      rgba(247, 241, 255, 0) 100%
-    );
   }
 }
 
 .circle-2 {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     position: absolute;
     width: 494px;
     height: 494px;
-    left: -181px;
+    left: -200px;
     top: -200px;
 
     background: linear-gradient(
@@ -229,6 +278,13 @@ img {
     );
     border-radius: 50%;
     z-index: -1;
+  }
+  @media screen and (min-width: 1920px) {
+    position: absolute;
+    width: 494px;
+    height: 494px;
+    left: -181px;
+    top: -200px;
   }
 }
 
@@ -251,12 +307,12 @@ img {
 }
 
 .circle-4 {
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     position: absolute;
     width: 325px;
     height: 325px;
     left: -118px;
-    top: 840px;
+    top: 300px;
 
     background: linear-gradient(
       180deg,
@@ -265,5 +321,13 @@ img {
     );
     border-radius: 50%;
     z-index: -1;
+  }
+
+  @media screen and (min-width: 1920px) {
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    left: -118px;
+    top: 840px;
   }
 }
