@@ -69,7 +69,7 @@
     position: absolute;
     width: 182px;
     height: 0px;
-    left: 89px;
+    left: 70px;
     top: 45px;
 
     border: 4px dashed #000000;
@@ -94,7 +94,7 @@
     position: absolute;
     width: 215px;
     height: 21px;
-    left: 72px;
+    left: 55px;
     top: 10px;
 
     background: #ffcede;
@@ -178,7 +178,7 @@
   background: #ffffff;
   border: 1px solid #dfdede;
   border-radius: 20px;
-  width: 288px;
+  width: 290px;
 
   @media screen and (min-width: 1024px) {
     width: auto;
@@ -208,8 +208,8 @@
 }
 
 .explanation__card-text {
-  width: 255px;
-  @media screen and (min-width: 1920px) {
+  width: 250px;
+  @media screen and (min-width: 1024px) {
     width: 340px;
   }
 }
@@ -223,7 +223,7 @@
   color: var(--primary-color);
   margin-bottom: 25px;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     font-size: 18px;
   }
 
@@ -237,7 +237,7 @@
 
     border: 4px dashed #ed769c;
 
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1024px) {
       top: 30px;
     }
   }
@@ -252,7 +252,7 @@
 
   color: var(--primary-text-color);
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     font-size: 16px;
   }
 }

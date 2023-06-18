@@ -46,8 +46,8 @@
     position: absolute;
     width: 182px;
     height: 0px;
-    left: 89px;
-    top: 65px;
+    left: 70px;
+    top: 85px;
 
     border: 4px dashed #000000;
 
@@ -71,7 +71,7 @@
     position: absolute;
     width: 215px;
     height: 21px;
-    left: 72px;
+    left: 55px;
     top: 38px;
 
     background: #ffcede;
@@ -159,6 +159,7 @@
   border: 1px solid #dfdfdf;
   border-radius: 20px;
   background: #ffffff;
+  width: 250px;
 
   @media screen and (min-width: 1920px) {
     padding: 45px 20px;
@@ -181,20 +182,20 @@
   position: relative;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   text-align: center;
 
   color: #282828;
-  width: 300px;
+  width: 220px;
   margin-top: 45px;
 
   &::before {
     content: "";
     position: absolute;
-    width: 200px;
+    width: 150px;
     height: 0px;
-    left: 50px;
+    left: 40px;
     top: 55px;
 
     border: 4px dashed #ed769c;
@@ -207,7 +208,7 @@
 }
 
 .button.primary.quality__button {
-  min-width: 320px;
+  min-width: 200px;
   @media screen and (min-width: 1024px) {
     min-width: 340px;
   }

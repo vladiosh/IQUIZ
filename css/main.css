@@ -64,9 +64,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 320px) {
   .container {
-    width: 360px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -530,7 +530,7 @@ body {
   position: absolute;
   width: 286px;
   height: 314px;
-  left: 45.91px;
+  left: 20px;
   top: 300px;
   z-index: -1;
 }
@@ -750,7 +750,7 @@ img {
 }
 
 .about__text--1 {
-  width: 320px;
+  width: 250px;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 15px;
@@ -773,7 +773,7 @@ img {
 }
 
 .about__text--2 {
-  width: 320px;
+  width: 250px;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 15px;
@@ -845,7 +845,7 @@ img {
 
 .about__image--people-mob {
   position: absolute;
-  width: 320px;
+  width: 250px;
   height: 186px;
   left: 20px;
   top: 78px;
@@ -988,7 +988,7 @@ img {
   position: absolute;
   width: 182px;
   height: 0px;
-  left: 89px;
+  left: 70px;
   top: 45px;
   border: 4px dashed #000000;
 }
@@ -1013,7 +1013,7 @@ img {
   position: absolute;
   width: 215px;
   height: 21px;
-  left: 72px;
+  left: 55px;
   top: 10px;
   background: #ffcede;
   border-radius: 40px;
@@ -1100,7 +1100,7 @@ img {
   background: #ffffff;
   border: 1px solid #dfdede;
   border-radius: 20px;
-  width: 288px;
+  width: 290px;
 }
 @media screen and (min-width: 1024px) {
   .explanation__item {
@@ -1136,9 +1136,9 @@ img {
 }
 
 .explanation__card-text {
-  width: 255px;
+  width: 250px;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .explanation__card-text {
     width: 340px;
   }
@@ -1153,7 +1153,7 @@ img {
   color: var(--primary-color);
   margin-bottom: 25px;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .explanation__card-title {
     font-size: 18px;
   }
@@ -1167,7 +1167,7 @@ img {
   top: 25px;
   border: 4px dashed #ed769c;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .explanation__card-title::before {
     top: 30px;
   }
@@ -1181,7 +1181,7 @@ img {
   line-height: 1.5;
   color: var(--primary-text-color);
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .explanation__card-text {
     font-size: 16px;
   }
@@ -1243,8 +1243,8 @@ img {
   position: absolute;
   width: 182px;
   height: 0px;
-  left: 89px;
-  top: 65px;
+  left: 70px;
+  top: 85px;
   border: 4px dashed #000000;
 }
 @media screen and (min-width: 1024px) {
@@ -1268,7 +1268,7 @@ img {
   position: absolute;
   width: 215px;
   height: 21px;
-  left: 72px;
+  left: 55px;
   top: 38px;
   background: #ffcede;
   border-radius: 40px;
@@ -1358,6 +1358,7 @@ img {
   border: 1px solid #dfdfdf;
   border-radius: 20px;
   background: #ffffff;
+  width: 250px;
 }
 @media screen and (min-width: 1920px) {
   .quality__item {
@@ -1383,19 +1384,19 @@ img {
   position: relative;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   text-align: center;
   color: #282828;
-  width: 300px;
+  width: 220px;
   margin-top: 45px;
 }
 .quality__item-name::before {
   content: "";
   position: absolute;
-  width: 200px;
+  width: 150px;
   height: 0px;
-  left: 50px;
+  left: 40px;
   top: 55px;
   border: 4px dashed #ed769c;
 }
@@ -1406,7 +1407,7 @@ img {
 }
 
 .button.primary.quality__button {
-  min-width: 320px;
+  min-width: 200px;
 }
 @media screen and (min-width: 1024px) {
   .button.primary.quality__button {
@@ -1546,7 +1547,7 @@ img {
   position: absolute;
   width: 182px;
   height: 0px;
-  left: 89px;
+  left: 70px;
   top: 45px;
   border: 4px dashed #000000;
 }
@@ -1571,7 +1572,7 @@ img {
   position: absolute;
   width: 215px;
   height: 21px;
-  left: 72px;
+  left: 55px;
   top: 15px;
   background: #ffcede;
   border-radius: 40px;
@@ -1599,9 +1600,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  width: 320px;
-  height: 75px;
-  left: 20px;
   top: 108px;
 }
 @media screen and (min-width: 1024px) {
@@ -1621,13 +1619,16 @@ img {
 }
 
 .form_text {
+  display: flex;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 1.45;
   text-align: center;
+  width: 250px;
   margin-bottom: 310px;
+  align-items: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -1654,18 +1655,18 @@ img {
 
 .subscribe__input {
   box-sizing: border-box;
-  width: 320px;
+  width: 250px;
   height: 50px;
   background: #ffffff;
   border: 1px solid #a7a7a7;
   border-radius: 4px;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.22;
   color: #a3a3a3;
   padding: 15px 120px 15px 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1024px) {
   .subscribe__input {
@@ -1696,9 +1697,8 @@ img {
   line-height: 1.2;
   align-items: center;
   border-radius: 8px;
-  padding: 15px 95px;
-  min-width: 243px;
-  margin-left: 16px;
+  padding: 15px 20px;
+  min-width: 250px;
   box-shadow: 0px 20px 8px rgba(171, 4, 54, 0.2);
 }
 @media screen and (min-width: 1024px) {
@@ -1713,6 +1713,7 @@ img {
     min-width: 290px;
     padding: 20px 55px;
     font-size: 20px;
+    margin-left: 16px;
   }
 }
 
