@@ -172,7 +172,7 @@
   background: #ffffff;
   width: 250px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     width: 200px;
   }
   @media screen and (min-width: 1920px) {
@@ -205,7 +205,7 @@
   width: 220px;
   margin-top: 45px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     width: 170px;
   }
 
@@ -219,7 +219,7 @@
 
     border: 4px dashed #ed769c;
 
-    @media screen and (min-width: 768px) and (max-width: 1023.9px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
       left: 10px;
     }
   }
@@ -240,19 +240,25 @@
 .quality__back-image {
   display: none;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
-    width: 450px;
+    width: 300px;
     height: 600.17px;
-    left: 900px;
-    top: -50px;
+    left: 700px;
+    top: 50px;
     display: block;
     z-index: -1;
   }
+
+  @media screen and (min-width: 1024px) {
+    width: 450px;
+
+    left: 900px;
+    top: -50px;
+  }
   @media screen and (min-width: 1920px) {
-    position: absolute;
     width: 720.47px;
-    height: 600.17px;
+
     left: 1376.1px;
     top: 0px;
     z-index: 0;
@@ -266,12 +272,12 @@ img {
 }
 
 .circle-6 {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     width: 741px;
     height: 741px;
-    left: 750px;
-    top: 90px;
+    left: 500px;
+    top: 120px;
 
     background: linear-gradient(
       180deg,
@@ -281,21 +287,22 @@ img {
     border-radius: 50%;
     z-index: -2;
   }
+  @media screen and (min-width: 1024px) {
+    left: 750px;
+    top: 90px;
+  }
   @media screen and (min-width: 1920px) {
-    position: absolute;
-    width: 741px;
-    height: 741px;
     left: 1400px;
     top: 178px;
   }
 }
 
 .circle-7 {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     width: 300px;
     height: 300px;
-    left: -215px;
+    left: -170px;
     top: 500px;
 
     background: linear-gradient(
@@ -306,8 +313,10 @@ img {
     border-radius: 50%;
     z-index: -1;
   }
+  @media screen and (min-width: 1024px) {
+    left: -215px;
+  }
   @media screen and (min-width: 1920px) {
-    position: absolute;
     width: 500px;
     height: 496px;
     left: -215px;

@@ -1461,7 +1461,7 @@ img {
   background: #ffffff;
   width: 250px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .quality__item {
     width: 200px;
   }
@@ -1498,7 +1498,7 @@ img {
   width: 220px;
   margin-top: 45px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .quality__item-name {
     width: 170px;
   }
@@ -1512,7 +1512,7 @@ img {
   top: 55px;
   border: 4px dashed #ed769c;
 }
-@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .quality__item-name::before {
     left: 10px;
   }
@@ -1535,22 +1535,27 @@ img {
 .quality__back-image {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .quality__back-image {
     position: absolute;
-    width: 450px;
+    width: 300px;
     height: 600.17px;
-    left: 900px;
-    top: -50px;
+    left: 700px;
+    top: 50px;
     display: block;
     z-index: -1;
   }
 }
+@media screen and (min-width: 1024px) {
+  .quality__back-image {
+    width: 450px;
+    left: 900px;
+    top: -50px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .quality__back-image {
-    position: absolute;
     width: 720.47px;
-    height: 600.17px;
     left: 1376.1px;
     top: 0px;
     z-index: 0;
@@ -1563,43 +1568,50 @@ img {
   height: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .circle-6 {
     position: absolute;
     width: 741px;
     height: 741px;
-    left: 750px;
-    top: 90px;
+    left: 500px;
+    top: 120px;
     background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
     border-radius: 50%;
     z-index: -2;
   }
 }
+@media screen and (min-width: 1024px) {
+  .circle-6 {
+    left: 750px;
+    top: 90px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .circle-6 {
-    position: absolute;
-    width: 741px;
-    height: 741px;
     left: 1400px;
     top: 178px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .circle-7 {
     position: absolute;
     width: 300px;
     height: 300px;
-    left: -215px;
+    left: -170px;
     top: 500px;
     background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
     border-radius: 50%;
     z-index: -1;
   }
 }
+@media screen and (min-width: 1024px) {
+  .circle-7 {
+    left: -215px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .circle-7 {
-    position: absolute;
     width: 500px;
     height: 496px;
     left: -215px;
