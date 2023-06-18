@@ -20,9 +20,7 @@
 .hero__box {
   @media screen and (min-width: 768px) {
     position: relative;
-    margin: 0;
-    width: 464px;
-    left: 100px;
+    text-align: start;
   }
   @media screen and (min-width: 1024px) {
     width: 464px;
@@ -49,7 +47,8 @@
   width: 125px;
   height: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
+    justify-content: flex-start;
     width: 200px;
     height: 45px;
   }
@@ -64,7 +63,7 @@
   width: 40px;
   height: 50px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 75px;
     height: 100px;
   }
@@ -98,7 +97,7 @@
   font-size: 16px;
   line-height: 1.21;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     font-size: 30px;
   }
   @media screen and (min-width: 1920px) {
@@ -117,7 +116,7 @@
   margin-bottom: 10px;
   width: 250px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 480px) {
     font-size: 30px;
     margin-bottom: 30px;
     width: 350px;
@@ -221,6 +220,12 @@
 
   z-index: -1;
 
+  @media screen and (min-width: 480px) {
+    width: 350px;
+    left: 70px;
+    top: 320px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 500px;
     height: 951px;
@@ -262,6 +267,11 @@ img {
   background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
   border-radius: 50%;
   z-index: -1;
+
+  @media screen and (min-width: 480px) {
+    left: 50px;
+    top: 277px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 700px;
