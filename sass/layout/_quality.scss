@@ -54,9 +54,14 @@
 
     border: 4px dashed #000000;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
       width: 239px;
       height: 0px;
+      left: 120px;
+      top: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
       left: 260px;
       top: 45px;
     }
@@ -83,6 +88,13 @@
     background: #ffcede;
     border-radius: 40px;
     z-index: -1;
+
+    @media screen and (min-width: 480px) {
+      width: 250px;
+      height: 20px;
+      left: 115px;
+      top: 10px;
+    }
 
     @media screen and (min-width: 768px) {
       left: 270px;
