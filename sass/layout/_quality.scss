@@ -218,7 +218,7 @@
 
   @media screen and (min-width: 1024px) {
     position: absolute;
-    width: 720.47px;
+    width: 450px;
     height: 600.17px;
     left: 900px;
     top: -50px;
@@ -233,6 +233,12 @@
     top: 0px;
     z-index: 0;
   }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .circle-6 {
