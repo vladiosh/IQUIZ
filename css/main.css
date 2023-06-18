@@ -1100,12 +1100,16 @@ img {
   top: 45px;
   border: 4px dashed #000000;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .explanation__title::before {
     width: 239px;
     height: 0px;
+    left: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .explanation__title::before {
     left: 260px;
-    top: 45px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1116,8 +1120,6 @@ img {
 }
 @media screen and (min-width: 1920px) {
   .explanation__title::before {
-    width: 239px;
-    height: 0px;
     left: 840px;
     top: 70px;
   }
@@ -1133,12 +1135,16 @@ img {
   border-radius: 40px;
   z-index: -1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .explanation__title::after {
     width: 250px;
     height: 20px;
+    left: 115px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .explanation__title::after {
     left: 260px;
-    top: 10px;
   }
 }
 @media screen and (min-width: 1024px) {
