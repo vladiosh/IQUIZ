@@ -16,6 +16,11 @@
 }
 
 .about__box {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    width: 464px;
+    left: 100px;
+  }
   @media screen and (min-width: 1024px) {
     position: relative;
     left: 200px;
@@ -33,6 +38,10 @@
   line-height: 1.22;
   color: var(--primary-color);
   margin-bottom: 245px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 45px;
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 30px;
@@ -153,10 +162,10 @@
 
   color: var(--primary-color);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     display: block;
     width: 350px;
-    font-size: 18px;
+
     line-height: 1.56;
   }
 
@@ -171,9 +180,15 @@
   @media screen and (max-width: 1919.9px) {
     display: none;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
+    width: 300px;
+    height: 504px;
+    left: 450px;
+    top: 50px;
+  }
+  @media screen and (min-width: 1024px) {
     width: 430px;
     height: 504px;
     left: 550px;
@@ -194,7 +209,7 @@
   height: 186px;
   left: 20px;
   top: 78px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -233,6 +248,13 @@ img {
   background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
   border-radius: 50%;
   z-index: -2;
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    height: 700px;
+    left: 350px;
+    top: 150px;
+  }
 
   @media screen and (min-width: 1024px) {
     width: 700px;
