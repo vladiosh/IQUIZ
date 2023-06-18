@@ -18,15 +18,17 @@
 }
 
 .hero__box {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     position: relative;
     margin: 0;
+    width: 464px;
+    left: 100px;
+  }
+  @media screen and (min-width: 1024px) {
     width: 464px;
     left: 200px;
   }
   @media screen and (min-width: 1920px) {
-    position: relative;
-    margin: 0;
     width: 464px;
     left: 416px;
   }
@@ -136,6 +138,10 @@
   margin-bottom: 275px;
   width: 286px;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+
   @media screen and (min-width: 1024px) {
     font-size: 18px;
     margin-bottom: 55px;
@@ -153,7 +159,7 @@
 
 .hero__button-box {
   text-align: center;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     text-align: start;
   }
 }
@@ -215,6 +221,14 @@
 
   z-index: -1;
 
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: 951px;
+    left: 350px;
+    top: 0px;
+    z-index: 0;
+  }
+
   @media screen and (min-width: 1024px) {
     width: 600px;
     height: 951px;
@@ -248,6 +262,13 @@ img {
   background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
   border-radius: 50%;
   z-index: -1;
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    height: 700px;
+    left: 300px;
+    top: -100px;
+  }
 
   @media screen and (min-width: 1024px) {
     width: 700px;

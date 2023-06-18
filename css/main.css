@@ -63,10 +63,16 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -328,18 +334,22 @@ body {
   position: relative;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .hero__box {
     position: relative;
     margin: 0;
+    width: 464px;
+    left: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__box {
     width: 464px;
     left: 200px;
   }
 }
 @media screen and (min-width: 1920px) {
   .hero__box {
-    position: relative;
-    margin: 0;
     width: 464px;
     left: 416px;
   }
@@ -454,6 +464,11 @@ body {
   margin-bottom: 275px;
   width: 286px;
 }
+@media screen and (min-width: 768px) {
+  .hero__text {
+    margin-bottom: 25px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .hero__text {
     font-size: 18px;
@@ -474,7 +489,7 @@ body {
 .hero__button-box {
   text-align: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .hero__button-box {
     text-align: start;
   }
@@ -534,6 +549,15 @@ body {
   top: 300px;
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .hero__image {
+    width: 500px;
+    height: 951px;
+    left: 350px;
+    top: 0px;
+    z-index: 0;
+  }
+}
 @media screen and (min-width: 1024px) {
   .hero__image {
     width: 600px;
@@ -568,6 +592,14 @@ img {
   background: linear-gradient(180deg, #f7f1ff 0%, rgba(247, 241, 255, 0) 100%);
   border-radius: 50%;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .circle-1 {
+    width: 700px;
+    height: 700px;
+    left: 300px;
+    top: -100px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .circle-1 {
@@ -1363,6 +1395,7 @@ img {
 @media screen and (min-width: 1920px) {
   .quality__item {
     padding: 45px 20px;
+    width: auto;
   }
 }
 
@@ -1637,6 +1670,7 @@ img {
     font-size: 22px;
     margin-bottom: 0;
     text-align: start;
+    width: auto;
   }
 }
 
@@ -1706,6 +1740,7 @@ img {
     min-width: 50px;
     height: 60px;
     padding: 5px 15px;
+    margin-left: 16px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1713,7 +1748,6 @@ img {
     min-width: 290px;
     padding: 20px 55px;
     font-size: 20px;
-    margin-left: 16px;
   }
 }
 
