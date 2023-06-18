@@ -316,6 +316,7 @@
       </section>
 
       <!-- --------------Quality------------------>
+
       <section class="quality">
         <div class="container quality__container">
           <picture class="quality__back-image">
@@ -381,7 +382,11 @@
             </li>
           </ul>
           <div class="quality__button-box">
-            <button type="button" class="button primary quality__button">
+            <button
+              type="button"
+              class="button primary quality__button"
+              data-modal-open
+            >
               <span class="button__text">Дізнатись детальніше</span>
               <span class="button__overlay"></span>
             </button>
@@ -448,93 +453,24 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
-          <svg width="18" height="18">
-            <use href="./images/icons.svg#icon-close-modal"></use>
-          </svg>
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <img
+            class="close-svg"
+            src="./images/icon-close-modal.svg"
+            alt="close btn"
+          />
         </button>
-        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="modal-form">
-          <div class="modal-form__box">
-            <div class="modal-form__fill">
-              <label for="user-name" class="modal-form__label">Имя</label>
-              <div class="modal-form__wrap">
-                <input
-                  type="text"
-                  class="modal-form__input"
-                  name="user-name"
-                  required
-                  id="user-name"
-                />
-                <svg class="modal-form__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person-modal"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="modal-form__fill">
-              <label for="user-tel" class="modal-form__label">Телефон</label>
-              <div class="modal-form__wrap">
-                <input
-                  type="tel"
-                  class="modal-form__input"
-                  name="user-tel"
-                  required
-                  id="user-tel"
-                />
-                <svg class="modal-form__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-phone-modal"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="modal-form__fill">
-              <label for="user-email" class="modal-form__label">Почта</label>
-              <div class="modal-form__wrap">
-                <input
-                  type="email"
-                  class="modal-form__input"
-                  name="user-email"
-                  required
-                  id="user-email"
-                />
-                <svg class="modal-form__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-email-modal"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="modal-form__fill modal-form__fill--margin">
-              <label for="user-text" class="modal-form__label"
-                >Комментарий</label
-              >
-              <textarea
-                name="user-text"
-                id="user-text"
-                class="modal-form__text"
-                placeholder="Введите текст"
-              ></textarea>
-            </div>
-
-            <div class="checkbox">
-              <input
-                type="checkbox"
-                name="privacy"
-                value="true"
-                class="checkbox__input visually-hidden"
-                id="privacy"
-              />
-              <label for="privacy" class="checkbox__label">
-                <span class="visually-hidden">
-                  <svg class="checkbox__icon" width="11" height="8">
-                    <use href="./images/icons.svg#icon-check"></use>
-                  </svg>
-                </span>
-                Соглашаюсь с рассылкой и принимаю
-
-                <a href="" class="checkbox__contract">Условия договора</a>
-              </label>
-            </div>
-            <button type="submit" class="modal-button">Отправить</button>
-          </div>
-        </form>
+        <h2 class="modal__title">Title</h2>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet consectetur. Mauris varius tempus platea
+          rhoncus amet cursus donec. At commodo tristique risus sapien aliquam
+          commodo eu in. Lacus lorem dolor ac a fusce scelerisque eget egestas
+          lorem. Diam gravida interdum habitant sit. Lorem ipsum dolor sit amet
+          consectetur. Mauris varius tempus platea rhoncus amet cursus donec. At
+          commodo tristique risus sapien aliquam commodo eu in. Lacus lorem
+          dolor ac a fusce scelerisque eget egestas lorem. Diam gravida interdum
+          habitant sit.
+        </p>
       </div>
     </div>
 
