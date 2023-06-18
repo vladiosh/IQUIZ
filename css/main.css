@@ -367,7 +367,7 @@ body {
   width: 125px;
   height: 30px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .logo {
     width: 200px;
     height: 45px;
@@ -385,7 +385,7 @@ body {
   width: 40px;
   height: 50px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .logo__icon {
     width: 75px;
     height: 100px;
@@ -420,7 +420,7 @@ body {
   font-size: 16px;
   line-height: 1.21;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .logo__text {
     font-size: 30px;
   }
@@ -995,6 +995,16 @@ img {
 .explanation__back-image {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .explanation__back-image {
+    position: absolute;
+    width: 300px;
+    left: 600px;
+    top: 10px;
+    z-index: -1;
+    display: block;
+  }
+}
 @media screen and (min-width: 1024px) {
   .explanation__back-image {
     position: absolute;
@@ -1002,8 +1012,6 @@ img {
     height: 505.64px;
     left: 700px;
     top: 50px;
-    z-index: -1;
-    display: block;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1051,10 +1059,16 @@ img {
   top: 45px;
   border: 4px dashed #000000;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .explanation__title::before {
     width: 239px;
     height: 0px;
+    left: 270px;
+    top: 45px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .explanation__title::before {
     left: 400px;
     top: 60px;
   }
@@ -1077,6 +1091,14 @@ img {
   background: #ffcede;
   border-radius: 40px;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .explanation__title::after {
+    width: 250px;
+    height: 20px;
+    left: 260px;
+    top: 10px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .explanation__title::after {
@@ -1142,6 +1164,12 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .explanation__list {
+    gap: 10px 20px;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .explanation__list {
     gap: 20px 70px;
@@ -1170,7 +1198,7 @@ img {
 .explanation__item:not(:last-child) {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .explanation__item:not(:last-child) {
     margin-bottom: 0;
   }
