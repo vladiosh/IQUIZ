@@ -1063,7 +1063,7 @@ img {
   .explanation__title::before {
     width: 239px;
     height: 0px;
-    left: 270px;
+    left: 260px;
     top: 45px;
   }
 }
@@ -1313,10 +1313,14 @@ img {
   color: var(--primary-color);
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .quality__title {
+    margin-bottom: 55px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .quality__title {
     font-size: 30px;
-    margin-bottom: 55px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1334,18 +1338,22 @@ img {
   top: 85px;
   border: 4px dashed #000000;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .quality__title::before {
     width: 239px;
     height: 0px;
+    left: 260px;
+    top: 45px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .quality__title::before {
     left: 400px;
     top: 60px;
   }
 }
 @media screen and (min-width: 1920px) {
   .quality__title::before {
-    width: 239px;
-    height: 0px;
     left: 840px;
     top: 70px;
   }
@@ -1360,6 +1368,12 @@ img {
   background: #ffcede;
   border-radius: 40px;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .quality__title::after {
+    left: 270px;
+    top: 10px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .quality__title::after {
@@ -1426,7 +1440,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .quality__list {
     justify-content: center;
     gap: 10px;
@@ -1447,6 +1461,11 @@ img {
   background: #ffffff;
   width: 250px;
 }
+@media screen and (min-width: 768px) {
+  .quality__item {
+    width: 200px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .quality__item {
     padding: 45px 20px;
@@ -1457,7 +1476,7 @@ img {
 .quality__item:not(:last-child) {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .quality__item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -1479,6 +1498,11 @@ img {
   width: 220px;
   margin-top: 45px;
 }
+@media screen and (min-width: 768px) {
+  .quality__item-name {
+    width: 170px;
+  }
+}
 .quality__item-name::before {
   content: "";
   position: absolute;
@@ -1487,6 +1511,11 @@ img {
   left: 40px;
   top: 55px;
   border: 4px dashed #ed769c;
+}
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+  .quality__item-name::before {
+    left: 10px;
+  }
 }
 
 .quality__button-box {

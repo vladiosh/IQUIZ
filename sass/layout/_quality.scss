@@ -31,9 +31,12 @@
 
   margin-bottom: 30px;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 55px;
+  }
+
   @media screen and (min-width: 1024px) {
     font-size: 30px;
-    margin-bottom: 55px;
   }
 
   @media screen and (min-width: 1920px) {
@@ -51,16 +54,19 @@
 
     border: 4px dashed #000000;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       width: 239px;
       height: 0px;
+      left: 260px;
+      top: 45px;
+    }
+
+    @media screen and (min-width: 1024px) {
       left: 400px;
       top: 60px;
     }
 
     @media screen and (min-width: 1920px) {
-      width: 239px;
-      height: 0px;
       left: 840px;
       top: 70px;
     }
@@ -77,6 +83,11 @@
     background: #ffcede;
     border-radius: 40px;
     z-index: -1;
+
+    @media screen and (min-width: 768px) {
+      left: 270px;
+      top: 10px;
+    }
 
     @media screen and (min-width: 1024px) {
       width: 400px;
@@ -142,7 +153,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
     gap: 10px;
   }
@@ -161,6 +172,9 @@
   background: #ffffff;
   width: 250px;
 
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
   @media screen and (min-width: 1920px) {
     padding: 45px 20px;
     width: auto;
@@ -169,7 +183,7 @@
 
 .quality__item:not(:last-child) {
   margin-bottom: 20px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }
@@ -191,6 +205,10 @@
   width: 220px;
   margin-top: 45px;
 
+  @media screen and (min-width: 768px) {
+    width: 170px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -200,6 +218,10 @@
     top: 55px;
 
     border: 4px dashed #ed769c;
+
+    @media screen and (min-width: 768px) and (max-width: 1023.9px) {
+      left: 10px;
+    }
   }
 }
 
