@@ -205,7 +205,9 @@
   background: #ffffff;
   border: 1px solid #dfdede;
   border-radius: 20px;
-  width: 290px;
+
+  height: 430px;
+  margin-right: 50px;
 
   transition: box-shadow 250ms var(--time-function);
 
@@ -213,14 +215,33 @@
   &:focus {
     box-shadow: var(--box-shadow);
   }
+  @media screen and (max-width: 479.9px) {
+    margin-right: 20px;
+    width: 290px;
+    height: auto;
+  }
+  @media screen and (max-width: 767.9px) {
+    max-width: 290px;
+    height: auto;
+  }
 
+  @media screen and (min-width: 768px) {
+    width: 290px;
+    height: auto;
+    margin-right: 0;
+  }
   @media screen and (min-width: 1024px) {
     width: auto;
   }
 }
 
+.slick-track {
+  display: flex;
+  justify-content: center;
+}
+
 .explanation__item:not(:last-child) {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -241,13 +262,6 @@
   margin-top: 25px;
 }
 
-.explanation__card-text {
-  width: 250px;
-  @media screen and (min-width: 1024px) {
-    width: 340px;
-  }
-}
-
 .explanation__card-title {
   position: relative;
   font-family: "Montserrat";
@@ -256,6 +270,11 @@
   line-height: 1.22;
   color: var(--primary-color);
   margin-bottom: 25px;
+
+  @media screen and (max-width: 479.9px) {
+    font-size: 12px;
+    margin-bottom: 35px;
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 18px;
@@ -270,6 +289,11 @@
     top: 25px;
 
     border: 4px dashed #ed769c;
+    @media screen and (max-width: 479.9px) {
+      font-size: 10px;
+      width: 100px;
+      top: 35px;
+    }
 
     @media screen and (min-width: 1024px) {
       top: 30px;
@@ -286,8 +310,17 @@
 
   color: var(--primary-text-color);
 
+  @media screen and (max-width: 479.9px) {
+    width: 120px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+    width: 250px;
+  }
+
   @media screen and (min-width: 1024px) {
     font-size: 16px;
+    width: 340px;
   }
 }
 

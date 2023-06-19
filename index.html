@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
@@ -46,7 +51,7 @@
               отримайте додатковий дохід
             </p>
             <div class="hero__button-box">
-              <button type="button" class="button primary" data-modal-open>
+              <button type="button" class="button primary" data-modal-open-1>
                 <span class="button__text">Дізнатись детальніше</span>
                 <span class="button__overlay"></span>
               </button>
@@ -343,6 +348,7 @@
               Як опитувальники допомагають просуванню будь-якого проекту:
             </p>
           </div>
+
           <ul class="quality__list list">
             <li class="quality__item">
               <img
@@ -381,11 +387,12 @@
               </h3>
             </li>
           </ul>
+
           <div class="quality__button-box">
             <button
               type="button"
               class="button primary quality__button"
-              id="anotherOpenModalBtn"
+              data-modal-open-2
             >
               <span class="button__text">Дізнатись детальніше</span>
               <span class="button__overlay"></span>
@@ -473,7 +480,17 @@
         </p>
       </div>
     </div>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/slick-slider.js"></script>
   </body>
 </html>
