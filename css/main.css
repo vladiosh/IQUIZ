@@ -131,7 +131,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
   .modal {
-    transform: translate(-70%, -50%) scale(1);
+    transform: translate(-65%, -50%) scale(1);
   }
 }
 @media screen and (min-width: 768px) {
