@@ -21,13 +21,6 @@
   text-align: center;
 }
 
-// .quality-box--position {
-//   @media screen and (min-width: 768px) and (max-width: 1023.9px) {
-//     position: relative;
-//     left: 100px;
-//   }
-// }
-
 .quality__title {
   font-family: "Montserrat";
   font-weight: 700;
@@ -244,6 +237,10 @@
     top: 55px;
 
     border: 4px dashed #ed769c;
+
+    @media screen and (max-width: 767.9px) {
+      top: 40px;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       left: 10px;

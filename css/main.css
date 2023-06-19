@@ -1485,6 +1485,11 @@ img {
   top: 55px;
   border: 4px dashed #ed769c;
 }
+@media screen and (max-width: 767.9px) {
+  .quality__item-name::before {
+    top: 40px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .quality__item-name::before {
     left: 10px;
